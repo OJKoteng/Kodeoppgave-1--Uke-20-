@@ -25,6 +25,12 @@ kiwi= prompt ("Skriv inn antall kiwi og trykk <Enter>")
 epler= prompt ("Skriv inn antall epler og trykk <Enter>")
 mengde= kiwi + epler; 
 document.getElementById ("demo").innerHTML = areal; 
+
+let skatt, inntekt, nettobeløp; 
+skatt=prompt ("Skriv inn skattebeløpet og trykk <Enter>")
+inntekt=prompt ("Skriv inn inntekt og trykk <Enter>")
+nettobeløp= inntekt - skatt; 
+document.getElementById ("demo").innerHTML = nettobeløp; 
 </script>    
 </body>
 </html>
