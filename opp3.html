@@ -6,6 +6,22 @@
     <title>Oppgave 3</title>
 </head>
 <body>
+    <input type="text" placeholder="Fornavn" id="fornavn">
+    <input type="text" placeholder="Mellomnavn" id="mellomnavn">
+    <input type="text" placeholder="etternavn" id="etternavn">
+    <button onclick="visnavn()">Vis navn</button>
+    <div id="demo"></div>
 
+    <script> 
+    function visnavn(){
+        let fornavn, mellomnavn, etternavn; 
+        fornavn = document.getElementById ("fornavn").value         
+        mellomnavn = document.getElementById ("mellomnavn").value
+        etternavn = document.getElementById ("etternavn").value
+        console.log (fornavn, mellomnavn, etternavn)
+        document.getElementById ("demo").innerHTML=`fornavn ${fornavn}, ${mellomnavn} mellomnavn, ${etternavn} etternavn`
+        //alert(`Fornavn ${fornavn} mellomnavn ${mellomnavn} etternavn ${etternavn}`)
+    }
+    </script>
 </body>
 </html>
