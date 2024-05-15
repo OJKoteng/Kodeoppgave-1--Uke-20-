@@ -9,7 +9,12 @@
 <p id="demo"></p>
 
 <script>
-
+let farge, navn; 
+farge = prompt("Skriv inn favorittfargen din og trykk <Enter>")
+navn = prompt("Skriv inn navnet ditt og trykk <Enter> ")
+console.log (farge, navn)
+//document.getElementById("demo").innerHTML= "Mitt navn er, " + navn + " Jeg liker best" + farge + "-farger"
+document.getElementById("demo").innerHTML= `Mitt navn er ${navn}. Jeg liker best ${farge}-farge`
 </script>
 </body>
 </html>
