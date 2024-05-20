@@ -16,20 +16,37 @@
 <main>
     <section>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iste aspernatur obcaecati harum? Recusandae earum odio impedit placeat, corporis explicabo ea quis ipsa odit repellendus quidem sit laudantium, exercitationem reprehenderit?</p>
-    <img width="350px" height="250px" src="https://t3.ftcdn.net/jpg/01/83/62/20/360_F_183622092_kkiYpOGm0Ca2u1Y0ZGWZxuqMSZ8GnojO.jpg" alt="">
-    <button>Click me!</button>
+    <img id="mainImage" width="350px" height="250px" src="https://t3.ftcdn.net/jpg/01/83/62/20/360_F_183622092_kkiYpOGm0Ca2u1Y0ZGWZxuqMSZ8GnojO.jpg" alt="">
     </section>
     
         <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nobis et! Reprehenderit, quas aut harum, corrupti, possimus blanditiis a fugiat quibusdam nisi aperiam vel corporis. Fugiat aliquid tempora cupiditate possimus.</p>
-        <img width="350px" height="250px" src="https://static3.depositphotos.com/1005979/207/i/450/depositphotos_2076067-stock-photo-put-your-text-on-blank.jpg" alt="">
-        <button>Click me!</button>
+        <button onclick="swapImage(1)">Click me!</button>
         </section>
 
             <section>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum vitae, tenetur voluptatibus sed exercitationem recusandae provident non error quae ex eos quasi voluptas ad dolore sunt tempora aperiam fuga veritatis?</p>
-            <img width="350px" height="250px" src="https://thebuttonqueen.co.uk/wp-content/uploads/2023/05/corozo-1-scaled.jpg" alt="">
+            <button onclick="swapImage(2)">Click me!</button>
             </section>
+
+                <section>
+                <button onclick="swapImage(3)">Click me!</button>
+                </section>
+
+                    <script>
+                    const images = ["https://t3.ftcdn.net/jpg/01/83/62/20/360_F_183622092_kkiYpOGm0Ca2u1Y0ZGWZxuqMSZ8GnojO.jpg", "https://static3.depositphotos.com/1005979/207/i/450/depositphotos_2076067-stock-photo-put-your-text-on-blank.jpg",
+                    "https://thebuttonqueen.co.uk/wp-content/uploads/2023/05/corozo-1-scaled.jpg"
+                    ]; 
+
+                    let currentimageindex = 0;
+
+                    function swapImage(buttonIndex) {
+                    const img = document.getElementById('mainImage'); 
+
+                    img.src = images [buttonIndex - 1]; 
+
+                    currentImageIndex = buttonIndex - 1; 
+                    }
+
+                    </script>
 </main>
 </body>
 </html>
