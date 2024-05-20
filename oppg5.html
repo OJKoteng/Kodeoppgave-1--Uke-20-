@@ -37,7 +37,12 @@
                 </section>
 
 <script>
-
+function changeColor(headerID) {
+let header = document.getElementById(headerID);
+let colors = ['red', 'blue', 'green', 'purple', 'orange']; 
+let randomColor = colors[Math.floor(Math.random() * colors.length)]; 
+header.style.color = randomColor; 
+}
 </script>
 </main>
 </body>
