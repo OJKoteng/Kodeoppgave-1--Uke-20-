@@ -8,6 +8,20 @@
 <body>
 <main>
 
+<input type="text" id="textInput" placeholder="Skriv noe...">
+<div id="outputDiv"></div>
+
+<script>
+
+let textInput = document.getElementById('textInput');
+let outputDiv = document.getElementById('outputDiv'); 
+
+textInput.addEventListener('input', function() {
+
+    outputDiv.textContent = textInput.value;
+});
+
+</script>
 </main>   
 </body>
 </html>
